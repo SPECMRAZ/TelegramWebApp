@@ -1,8 +1,15 @@
 import './App.css';
 
 function App() {
-  const TG = window.Telegram.WebApp
+  const TG = window.Telegram.WebApp;
   // const { first_name } = TG.initDataUnsafe.user;
+  TG.MainButton.text = "Готово.";
+  TG.MainButton.show();
+
+  Telegram.WebApp.onEvent('mainButtonClicked', function(){
+    console.log('onEvent');
+    TG.sendData("some string that we need to send"); 
+  });
 
   TG.expand()
   return (
