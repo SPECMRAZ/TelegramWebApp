@@ -2,7 +2,7 @@ import './App.css';
 
 function App() {
   const TG = window.Telegram.WebApp;
-  // const { first_name } = TG.initDataUnsafe.user;
+  const { first_name } = TG.initDataUnsafe.user;
   TG.MainButton.text = "Готово.";
   TG.MainButton.show();
 
@@ -17,7 +17,7 @@ function App() {
 
       <div className="text">
         <h3>Добро пожаловать!</h3>
-        <h2>USERNAME</h2>
+        <h2>{first_name}</h2>
       </div>
 
       <p className="hint">
