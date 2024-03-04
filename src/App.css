@@ -1,10 +1,6 @@
 h1 {
   color: var(--tg-theme-button-color)
 }
-.incorrect {
-  
-  border-color: red;
-}
 
 .App {
   padding: 20px;
