@@ -1,6 +1,10 @@
 h1 {
   color: var(--tg-theme-button-color)
 }
+.incorrect {
+  
+  border-color: red;
+}
 
 .App {
   padding: 20px;
@@ -51,16 +55,21 @@ h2 {
   outline: var(--tg-theme-hint-color);
   border: 2px solid #DADCE0;
   padding: 10px;
+  background-color: var(--tg-theme-bg-color);
 }
-.form input:focus{
+
+.form input:focus {
   border-color: var(--tg-theme-button-color);
 }
 
-
+.form input:focus + .inpText{
+  color: var(--tg-theme-button-color);
+}
 .inp {
   position: relative;
 }
-.inpText{
+
+.inpText {
   font-size: 14px;
   left: 10px;
   top: -10px;
@@ -72,12 +81,14 @@ h2 {
 label {
   /* border: 1px solid red; */
   display: flex;
-justify-content: center;
+  justify-content: center;
 }
 
 input[type="checkbox"] {
   width: 20px;
 }
+
+
 
 /* 
 
