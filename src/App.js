@@ -15,12 +15,13 @@ function App() {
     let okay = false;
     for (let item in filled) {
       if (filled[item] === false) {
-  
+
         let el = document.querySelector(`.${item}`)
 
         if (el) {
           alert(`Заполните поле ${el.type}`)
-        } else {
+        }
+        if (el === undefined) {
           okay = true;
         }
       }
