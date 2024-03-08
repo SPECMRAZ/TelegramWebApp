@@ -37,7 +37,7 @@ function App() {
 
       <div className="text">
         <h3>Добро пожаловать!</h3>
-        {TG.initDataUnsafe.user.first_name && <h2>{TG.initDataUnsafe.user.first_name}</h2>}
+        {TG.initDataUnsafe?.user?.first_name && <h2>{TG.initDataUnsafe.user.first_name}</h2>}
       </div>
 
       <p className="hint">
